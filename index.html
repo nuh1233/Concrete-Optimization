@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Optimization in Smart Cities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="hero">
+            <h1>Concrete Optimization for Futuristic Smart Cities</h1>
+            <p>Balancing technology with the essential infrastructure for sustainable development.</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About Me - Nuh Ajdinoski</h2>
+            <img src="images/nuh_12.jpg" alt="Nuh Ajdinoski" class="profile-image">
+            <p>I am Nuh Ajdinoski, part of a family-owned European masonry and construction company. We specialize in high-quality masonry work across generations. Our expertise focuses on the effective use of construction materials like concrete, metal, and wood. My main concern with smart cities is the overemphasis on technology and sensors, which often leads to the **mismanagement of resources** and **increased project costs**.</p>
+        </div>
+    </section>
+
+    <!-- Metro Population Growth Section -->
+    <section class="metro-growth">
+        <div class="container">
+            <h2>Metro Population Growth & Urbanization</h2>
+            <img src="images/population_1.jpg" alt="Metro Growth" class="metro-image">
+            <p>With the continuous rise in metro populations globally, cities are expanding at an unprecedented rate. This surge in population demands not only smart infrastructure but also physical **construction** that can handle the increasing number of residents. It’s critical that smart cities account for urban growth by balancing both technology and the essential structures that make cities livable and functional.</p>
+        </div>
+    </section>
+
+    <!-- Importance of Construction in Smart Cities -->
+    <section class="construction-smart-cities">
+        <div class="container">
+            <h2>The Need for Construction in Smart Cities</h2>
+            <img src="images/concrete_building.jpg" alt="Smart City Construction" class="construction-image">
+            <p>Smart cities often emphasize sensors, AI, and advanced technologies but forget about the **construction** that supports these innovations. **Concrete** remains the backbone of most infrastructure projects. Without proper construction planning, smart city ambitions will remain incomplete. The foundation must be built before smart technologies can truly integrate into urban life.</p>
+        </div>
+    </section>
+
+    <!-- Cost of Futuristic Cities -->
+    <section class="line-city">
+        <div class="container">
+            <h2>The Cost of Futuristic Cities: The Line City Example</h2>
+            <img src="images/line_city.jpg" alt="The Line City in Saudi Arabia" class="line-image">
+            <p>The **Line City** proposed by Saudi Arabia is a shining example of futuristic urban design. However, the cost of building such cities can be astronomical, running into **hundreds of billions of dollars**. Construction resources like **concrete** and metal need to be optimized at scale to ensure these projects remain financially sustainable. Mismanagement could lead to skyrocketing costs that could derail the vision of the city.</p>
+        </div>
+    </section>
+
+    <!-- Concrete Calculator Section -->
+    <section class="concrete-calculator">
+        <div class="container">
+            <h2>Concrete Optimization Calculator</h2>
+            <p>Use this calculator to estimate the amount of concrete needed for your smart city project. We also optimize the amount to reduce excess resource costs.</p>
+            
+            <!-- Project Type Selection -->
+            <div class="input-group">
+                <label for="projectType">Choose a Project:</label>
+                <select id="projectType" onchange="showInputs()">
+                    <option value="">--Select--</option>
+                    <option value="circular">Circular Slab or Tube</option>
+                    <option value="curb">Curb and Gutter Barrier</option>
+                    <option value="stairs">Stairs</option>
+                    <option value="rectangle">Rectangle/Square Slab</option>
+                </select>
+            </div>
+            
+            <!-- Inputs for Circular Slab -->
+            <div id="circularInputs" class="hidden">
+                <div class="input-group">
+                    <label for="radius">Radius (in feet):</label>
+                    <input type="number" id="radius" placeholder="Enter radius in feet">
+                </div>
+                <div class="input-group">
+                    <label for="depthCircular">Depth (in feet):</label>
+                    <input type="number" id="depthCircular" placeholder="Enter depth in feet">
+                </div>
+            </div>
+
+            <!-- Inputs for Curb and Gutter Barrier -->
+            <div id="curbInputs" class="hidden">
+                <div class="input-group">
+                    <label for="lengthCurb">Length (in feet):</label>
+                    <input type="number" id="lengthCurb" placeholder="Enter length in feet">
+                </div>
+                <div class="input-group">
+                    <label for="widthCurb">Width (in feet):</label>
+                    <input type="number" id="widthCurb" placeholder="Enter width in feet">
+                </div>
+                <div class="input-group">
+                    <label for="depthCurb">Depth (in feet):</label>
+                    <input type="number" id="depthCurb" placeholder="Enter depth in feet">
+                </div>
+            </div>
+
+            <!-- Inputs for Stairs -->
+            <div id="stairsInputs" class="hidden">
+                <div class="input-group">
+                    <label for="numSteps">Number of Steps:</label>
+                    <input type="number" id="numSteps" placeholder="Enter number of steps">
+                </div>
+                <div class="input-group">
+                    <label for="treadWidth">Tread Width (in feet):</label>
+                    <input type="number" id="treadWidth" placeholder="Enter tread width in feet">
+                </div>
+                <div class="input-group">
+                    <label for="treadDepth">Tread Depth (in feet):</label>
+                    <input type="number" id="treadDepth" placeholder="Enter tread depth in feet">
+                </div>
+                <div class="input-group">
+                    <label for="riserHeight">Riser Height (in feet):</label>
+                    <input type="number" id="riserHeight" placeholder="Enter riser height in feet">
+                </div>
+            </div>
+
+            <!-- Inputs for Rectangle/Square Slab -->
+            <div id="rectangleInputs" class="hidden">
+                <div class="input-group">
+                    <label for="lengthRect">Length (in feet):</label>
+                    <input type="number" id="lengthRect" placeholder="Enter length in feet">
+                </div>
+                <div class="input-group">
+                    <label for="widthRect">Width (in feet):</label>
+                    <input type="number" id="widthRect" placeholder="Enter width in feet">
+                </div>
+                <div class="input-group">
+                    <label for="depthRect">Depth (in feet):</label>
+                    <input type="number" id="depthRect" placeholder="Enter depth in feet">
+                </div>
+            </div>
+
+            <button type="button" onclick="calculateConcrete()">Calculate</button>
+
+            <!-- Results Section -->
+            <div id="result" class="result-box">
+                <h3>Concrete Needed:</h3>
+                <p id="output"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nuh Ajdinoski - Concrete Optimization for Smart Cities</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
